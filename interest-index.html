@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire & Trish</title>
+    <link rel="stylesheet" type="text/css" href="interest-style.css">
+    <link rel="stylesheet" type="text/css" href="interest-media.css">
+    <script src="interest-script.js"></script>
+    <script src="https://kit.fontawesome.com/bbe3fef533.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82a4484e9a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/pic.png" alt="cl" class="cl">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-claire">About</a></li>
+                    <li><a href="#interest">Interest</a></li>
+                    <li><a href="#portfolio">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to <span class="highlighted-text">Our Website</span></p>
+            </div>
+        </div>
+    </div>
+   <!----------------------------------------about claire--------------------------------------->
+
+   
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/kapagod.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span class="highlighted-text">claire</span></h1>
+                <P>Hi, I'm Clarieza Bautista, but you can call me Claire. Before I share my interest, let me introduce my self first. In addition to working towards becoming a skilled web developer right now, I also want to excel as a digital artist and graphic designer.</P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" data-tab="skills">Skills</p>
+                    <p class="tab-links" data-tab="experience">Experience</p>
+                    <p class="tab-links" data-tab="education">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="highlighted-text">Graphic Design</span><br>Adobe Illustrator<br>Canva</li>
+                        <li><span class="highlighted-text">Digital Art</span><br>Ibispaintx<br>Medibang</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="highlighted-text">Web Design</span><br>Studied HTML, CSS, & JS<br>Built a project and portfolio website</li>
+                        <li><span class="highlighted-text">Digital Design</span><br>Digital Artist since 2020<br>With 20 pieces of digital art<br>BOLTUP Digital Artist</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="highlighted-text">Senior High School</span><br>Mobile Application and Web Development at STI College</li>
+                        <li><span class="highlighted-text">College</span><br>BS Information System at TUP Manila</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script for the First About Section (claire) -->
+<script>
+    var tablinks1 = document.querySelectorAll("#about .tab-links");
+    var tabcontents1 = document.querySelectorAll("#about .tab-contents");
+   
+    function opentab1(tabname) {
+        for (tablink of tablinks1) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents1) {
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.target.classList.add("active-link");
+    }
+    
+    for (var i = 0; i < tablinks1.length; i++) {
+        tablinks1[i].addEventListener('click', function () {
+            opentab1(this.getAttribute("data-tab"));
+        });
+    }
+</script>
+<!---------------------------------------------  About Trishia Section  ------------------------>
+<div class="about-section" id="about2">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/mooncakeee.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span class="highlighted-text">trishia</span></h1>
+                <P>Hi, I'm Trishia San Diego, but you can call me Trishia Batumbakal Di Magiba. Ako lang to si Trishia na mahal na mahal ka uwu. #trishia lang malakas</P>
+                <div class="tab-titles">
+                    <p class="tab-links2 active-link" data-tab="skills2">Skills</p>
+                    <p class="tab-links2" data-tab="experience2">Experience</p>
+                    <p class="tab-links2" data-tab="education2">Education</p>
+                </div>
+                <div class="tab-contents2 active-tab" data-tab="skills2">
+                    <ul>
+                        <li><span class="highlighted-text">Basta</span><br>Basta<br>Basta</li>
+                        <li><span class="highlighted-text">Basta</span><br>Basta<br>Basta</li>
+                    </ul>
+                </div>
+                <div class="tab-contents2" data-tab="experience2">
+                    <ul>
+                        <li><span class="highlighted-text">Web Design</span><br>Studied HTML, CSS, & JS<br>Built a project and portfolio website</li>
+                        <li><span class="highlighted-text">Digital Design</span><br>Digital Artist since 2020<br>With 20 pieces of digital art<br>BOLTUP Digital Artist</li>
+                    </ul>
+                </div>
+                <div class="tab-contents2" data-tab="education2">
+                    <ul>
+                        <li><span class="highlighted-text">Senior High School</span><br>Mobile Application and Web Development at STI College</li>
+                        <li><span class="highlighted-text">College</span><br>BS Information System at TUP Manila</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script for the Second About Section (trishia) -->
+<script>
+    var tabLinks2 = document.querySelectorAll(".tab-links2");
+    var tabContents2 = document.querySelectorAll(".tab-contents2");
+   
+    function opentab2(tabname) {
+        for (tabLink2 of tabLinks2) {
+            tabLink2.classList.remove("active-link");
+        }
+        for (tabContent2 of tabContents2) {
+            tabContent2.classList.remove("active-tab");
+        }
+        document.querySelector(`.tab-contents2[data-tab="${tabname}"]`).classList.add("active-tab");
+        event.target.classList.add("active-link");
+    }
+    
+    for (var i = 0; i < tabLinks2.length; i++) {
+        tabLinks2[i].addEventListener('click', function () {
+            opentab2(this.getAttribute("data-tab"));
+        });
+    }
+</script>
+
+</script>
+<!-----------------------------------------------Interest for claire------------------------------>
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title"><span class="highlighted-text">Claire's</span> Interest</h1>
+        <div class="works-list">
+            <div>
+                <h2>---------  Claire's Interest  ---------</h2>
+                <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-tv"></i> <i class="fa-solid fa-gamepad"></i> <br>
+                <h2>Digital Portrait</h2>
+                <p>Art is like my soulmate. Among the many forms of art, my love for digital portraits has grown to become a profound and cherished passion.</p>
+                <h2>Watching Movies</h2>
+                <p>Watching movies is not just a hobby for me; it's a deep-seated passion and a gateway to a world of boundless imagination and storytelling.</p>
+                <h2>Gaming</h2>
+                <p>My interest in gaming transcends the act of playing; it encompasses the immersive worlds, intricate narratives, and the vibrant gaming community that makes this pastime so special.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>---------  Claire's Interest  ---------</h2>
+                <i class="fa-solid fa-pen"></i> <i class="fa-solid fa-tv"></i> <i class="fa-solid fa-gamepad"></i> <br>
+                <h2>Digital Portrait</h2>
+                <p>Art is like my soulmate. Among the many forms of art, my love for digital portraits has grown to become a profound and cherished passion.</p>
+                <h2>Watching Movies</h2>
+                <p>Watching movies is not just a hobby for me; it's a deep-seated passion and a gateway to a world of boundless imagination and storytelling.</p>
+                <h2>Gaming</h2>
+                <p>My interest in gaming transcends the act of playing; it encompasses the immersive worlds, intricate narratives, and the vibrant gaming community that makes this pastime so special.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------------Interest for Trishia------------------------------>
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title"><span class="highlighted-text">Trishia's</span> Interest</h1>
+        <div class="works-list">
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>BASTA</h2>
+                <p>LAGAY KA HERE</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tv"></i>
+                <h2>BASTA</h2>
+                <p>LAGAY KA HERE</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>BASTA</h2>
+                <p>LAGAY KA HERE</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------for gallery------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><span class="highlighted-text">Claire & Trishia's</span> Gallery</h1>
+        <div class="design-list">
+            <div class="design">
+                <img src="images/art.png">
+                <div class="layer">
+                    <h3>Claire's Digital Art</h3>
+                    <p>Art Names; <br> Paloma <br> Caoimhe <br> Zephyr <br>  Seraphina </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/movies.png">
+                <div class="layer">
+                    <h3>Claire's Favorite Movies</h3>
+                    <p> Doctor Strange in Multiverse of Madness <br>Lord of The Rings <br>Harry Potter <br> Pirates of the Carribean</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/games.png">
+                <div class="layer">
+                    <h3>Claire's Favorite Online Games</h3>
+                    <p>Mobile Legends <br>Genshin Impact</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/games.png">
+                <div class="layer">
+                    <h3>Digital Art</h3>
+                    <p>Art Name: Paloma <br>"dove" or "peace"</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="design">
+                <img src="images/games.png">
+                <div class="layer">
+                    <h3>Digital Art</h3>
+                    <p>Art Name: Valencia <br> "brave" or "strong."</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="design">
+                <img src="images/games.png">
+                <div class="layer">
+                    <h3>Digital Art</h3>
+                    <p>Art Name: Caoimhe <br>"beautiful, gentle, or precious"</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+<!-----------------------------------------------Contacts------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-content">
+                <h1 class="sub-title"><span class="highlighted-text contact-word">Contact</span> Us</h1>
+                <img class="contact-image" src="images/kapagod.png">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/itsxloki?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@themischiefloki"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://instagram.com/itsxlokiii?igshid=NzZlODBkYWE4Ng="><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <p><i class="fa-solid fa-paper-plane"></i>clarieza.bautista@tup.edu.ph</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="fruits">
+        <p>Copyright © Clarieza Bautista and Trishia San Diego 2023 All Rights Reserve <br>Thank you for visiting Our Website! <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+</div>
+</body>
+</html>
+
