@@ -166,7 +166,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/* Your existing CSS code */
+
 
 /* Add this to reduce spacing between "About Me" sections */
 #about {
@@ -174,7 +174,7 @@ nav ul li a:hover::after {
 }
 
 #about2 {
-    padding: -100px 0; 
+    padding: 100px 0; /* Adjust the top and bottom padding to control spacing */
 }
 
 .highlighted-text {
@@ -186,10 +186,7 @@ nav ul li a:hover::after {
 /* CSS for About2 Section */
 #about2 {
     padding: 150px 0; /* Adjust the top and bottom padding to control spacing */
-    color: #e4dada;
-    background-image: url(images/Bogart\ .jpg);
-    background-size: cover;
-    background-position: center;
+    color: #ffffff;
 }
 
 #about2 .row {
@@ -470,14 +467,6 @@ nav ul li a:hover::after {
     margin-top: 20px; /* Add margin-top to separate the icons from the image */
 }
 
-.social-icons a:hover {
-    color: #853c00;
-    transform: translateY(-5px);
-}
-
-
-
-
 .fruits{
     width: 100%;
     text-align: center;
@@ -491,4 +480,7 @@ nav ul li a:hover::after {
     color: #FFE456;
 }
 
-
+.fa-regular.fa-circle-xmark,
+.fa-solid.fa-bars {
+    display: none;
+}
