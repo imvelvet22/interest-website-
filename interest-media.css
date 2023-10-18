@@ -31,7 +31,7 @@
         background: #DBA0D3;
         position: fixed;
         top: 0;
-        right: -200px; /*200 to datiiii gago ka ikaw pala salarin*/
+        right: -200px; /*gago ka ikaw pala salarin*/
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -207,4 +207,6 @@
      /* Adjust as needed */
     }
   }
+
+
 

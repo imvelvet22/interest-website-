@@ -6,10 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function openmenu() {
         sidemenu.style.right = "0";
+        closeButton.style.display = "block"; // Show the close button
+        menuButton.style.display = "none"; // Hide the menu button
     }
 
     function closemenu() {
         sidemenu.style.right = "-200px";
+        closeButton.style.display = "none"; // Hide the close button
+        menuButton.style.display = "block"; // Show the menu button
     }
 
     function openMenu() {

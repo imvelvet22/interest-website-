@@ -178,18 +178,23 @@ nav ul li a:hover::after {
 
 .highlighted-text {
   color: #ffe456; /* Replace with your desired highlight color */
+    padding: 100px 0;
+}
+
+#about2 {
+    padding: 100px 0;
+}
+
+.highlighted-text {
+    color: #FFE456; 
 }
 
 /*----------------------------------------abouuuttttt for trishiaaaaa---------------------------*/
 
 /* CSS for About2 Section */
 #about2 {
-  padding: 150px 0; /* Adjust the top and bottom padding to control spacing */
-  height: 110vh;
-  color: #e4dada;
-  background-image: url(images/basta.jpg);
-  background-size: cover;
-  background-position: center;
+    padding: 150px 0; 
+    color: #ffffff;
 }
 
 #about2 .row {
@@ -284,16 +289,14 @@ nav ul li a:hover::after {
 }
 
 .works-list > div {
-  flex-basis: calc(
-    50% - 20px
-  ); /* 50% width for each section with some spacing */
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center; /* Center text within sections */
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-  margin: 0 10px; /* Add spacing between sections */
+    flex-basis: calc(50% - 20px); /* 50% width for each section with some spacing */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; 
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    margin: 0 10px; /* Add spacing between sections */
 }
 
 /* Optional: Style each work item's title and description */
