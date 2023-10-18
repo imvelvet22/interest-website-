@@ -187,7 +187,7 @@ nav ul li a:hover::after {
   padding: 150px 0; /* Adjust the top and bottom padding to control spacing */
   height: 110vh;
   color: #e4dada;
-  background-image: url(images/Bogart\ .jpg);
+  background-image: url(images/basta.jpg);
   background-size: cover;
   background-position: center;
 }

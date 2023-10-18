@@ -208,10 +208,3 @@
     }
   }
 
-  @media only screen and (max-width: 600px) {
-    #about2 {
-        background-image: url(loveu.jpg); /* Replace 'path/to/your/image.jpg' with the actual image file path */
-      background-size: cover; /* Adjust as needed */
-     /* Adjust as needed */
-    }
-  }
