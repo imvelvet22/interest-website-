@@ -109,6 +109,7 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
 #about2 {
     padding: 30px 0; /* Reduce the top padding to move the content higher on the page */
     color: #fff7f7;
@@ -186,7 +187,7 @@
     display: block;
   }
   
-  
+
 
 .fa-solid.fa-bars {
     display: block;
@@ -196,11 +197,21 @@
     font-size: 25px;
     z-index: 9999; /* Ensure it's above other elements */
     cursor: pointer;
+    }
 }
 
-.contact-us {
-    background-image: url('loveeee.jpg');
+@media only screen and (max-width: 600px) {
+    #contact {
+        background-image: url(images/loveeee.jpg); /* Replace 'path/to/your/image.jpg' with the actual image file path */
+      background-size: cover; /* Adjust as needed */
+     /* Adjust as needed */
+    }
   }
 
-
-
+  @media only screen and (max-width: 600px) {
+    #about2 {
+        background-image: url(loveu.jpg); /* Replace 'path/to/your/image.jpg' with the actual image file path */
+      background-size: cover; /* Adjust as needed */
+     /* Adjust as needed */
+    }
+  }
