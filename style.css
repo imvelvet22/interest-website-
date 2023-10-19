@@ -521,10 +521,7 @@ nav ul li a:hover::after {
   color: #ffe456;
 }
 
-.fa-regular.fa-circle-xmark,
-.fa-solid.fa-bars {
-  display: none;
-}
+
 
 @media screen and (max-width: 800px) {
   .contact-us {
@@ -534,4 +531,14 @@ nav ul li a:hover::after {
   .contact-row {
     position: relative;
   }
+}
+
+#closeButton, #menuButton {
+  float: right; /* Align the buttons to the right */
+  margin-right: 20px;
+}
+
+.fa-regular.fa-circle-xmark,
+.fa-solid.fa-bars {
+    display: none;
 }
