@@ -3,4 +3,4 @@ bautista's contributons
 html, css, media, js
 
 san diego's contributions
-css, html
+css, html, media
