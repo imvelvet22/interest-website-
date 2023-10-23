@@ -11,6 +11,9 @@ js
 - functionality for a side menu on a web page 
 
 san diego's contributions (html, css, media)
-html - "navigation" or "navigation code." 
-css -  images & text positioning
-media -  images & text positioning
+html 
+- "navigation" or "navigation code." 
+css
+-  images & text positioning
+media
+-  images & text positioning
